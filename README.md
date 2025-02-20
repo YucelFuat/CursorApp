@@ -1,84 +1,88 @@
-<<<<<<< HEAD
-# Modern Todo App
+# Modern Todo Application
 
-A feature-rich, accessible, and responsive Todo application built with vanilla JavaScript, HTML, and CSS. This application follows modern web development best practices and provides a smooth user experience across all devices.
+A full-stack Todo application with a modern UI, built with Node.js, Express, and PostgreSQL. Features include dark mode, keyboard shortcuts, task prioritization, and real-time task duration tracking.
 
 ## Features
 
-- **Task Management**
-  - Add, edit, and delete tasks
-  - Mark tasks as complete/incomplete
-  - Set priority levels (Low, Medium, High)
-  - Prevent duplicate tasks
-  - Input validation and error handling
+- ✨ Modern, responsive UI with dark/light mode
+- 🎯 Task prioritization (Low, Medium, High)
+- ⌨️ Keyboard shortcuts for better productivity
+- 🕒 Real-time task duration tracking
+- 🔍 Filter tasks by status (All, Active, Completed)
+- 📊 Sort tasks by date or priority
+- 🔒 Secure API with input validation and rate limiting
+- 🎨 Clean and accessible interface
 
-- **Organization**
-  - Filter tasks (All, Active, Completed)
-  - Sort by date or priority
-  - Clear all completed tasks
+## Tech Stack
 
-- **User Experience**
-  - Dark/Light theme with system preference detection
-  - Smooth animations and transitions
-  - Keyboard shortcuts
-  - Responsive design for all screen sizes
-  - Error feedback with visual indicators
+- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
+- **Backend**: Node.js, Express.js
+- **Database**: PostgreSQL
+- **Security**: Helmet.js, CORS, Rate Limiting
+- **Validation**: Express Validator
 
-- **Data Persistence**
-  - Local storage integration
-  - Data persists across page refreshes
+## Prerequisites
 
-- **Accessibility**
-  - ARIA labels and roles
-  - Keyboard navigation support
-  - High contrast mode support
-  - Screen reader friendly
-  - Focus management
+- Node.js (v14 or higher)
+- PostgreSQL (v12 or higher)
+- npm or yarn
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies using npm install
+3. Create a .env file in the root directory
+4. Initialize the database
+5. Start the server using npm start
+
+## Environment Variables
+
+The following environment variables need to be set in your .env file:
+
+- PORT
+- DB_USER
+- DB_PASSWORD
+- DB_HOST
+- DB_PORT
+- DB_NAME
+- ALLOWED_ORIGINS
 
 ## Keyboard Shortcuts
 
-- `Enter` - Add new task (when input is focused)
-- `Ctrl + D` - Toggle dark/light mode
-- `Ctrl + K` - Show/hide keyboard shortcuts
+- Ctrl + D: Toggle dark/light mode
+- Ctrl + K: Show/hide keyboard shortcuts
+- Enter: Add new task (when input is focused)
+- Escape: Cancel task editing
 
-## Technical Details
+## API Endpoints
 
-- Built with vanilla JavaScript (no frameworks)
-- Uses CSS custom properties for theming
-- CSS Grid and Flexbox for responsive layouts
-- Local Storage API for data persistence
-- Font Awesome icons for visual elements
+- GET /api/tasks: Get all tasks
+- POST /api/tasks: Create a new task
+- PUT /api/tasks/:id: Update a task
+- DELETE /api/tasks/:id: Delete a task
 
-## Browser Support
+## Security Features
 
-The application supports all modern browsers:
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## Getting Started
-
-1. Clone or download the repository
-2. Open `index.html` in your browser
-3. Start managing your tasks!
-
-No build process or installation required - it works right out of the box!
-
-## Best Practices Implemented
-
-- Semantic HTML5 elements
-- BEM-like CSS naming convention
-- Responsive design principles
-- Progressive enhancement
-- Error handling and validation
-- Accessibility (WCAG 2.1) guidelines
-- Clean and maintainable code structure
-- Performance optimizations
+- CORS protection
+- Rate limiting
+- XSS protection via Helmet
+- Input validation
+- Prepared statements for SQL queries
 
 ## Contributing
 
-Feel free to submit issues and enhancement requests! 
-=======
-# CursorApp
->>>>>>> d6980c195f2f24b2b3956cb82baf209fc2946716
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Font Awesome for icons
+- PostgreSQL for reliable data storage
+- Express.js community for excellent middleware
