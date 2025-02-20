@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <form id="todo-form" aria-label="Add new task">
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="todo-input" 
+                    placeholder="What needs to be done?"
+                    aria-label="Task description"
+                    required
+                >
+                <select id="priority-select" aria-label="Task priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit" aria-label="Add task">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+        <div class="filters">
+            <div class="filter-group">
+                <button data-filter="all" class="active" aria-pressed="true">All</button>
+                <button data-filter="active" aria-pressed="false">Active</button>
+                <button data-filter="completed" aria-pressed="false">Completed</button>
+            </div>
+            <select id="sort-select" aria-label="Sort tasks">
+                <option value="date">Date</option>
+                <option value="priority">Priority</option>
+            </select>
+        </div>
+
+        <ul id="todo-list" class="todo-list" aria-label="Todo list"></ul>
+
+        <div class="info">
+            <p id="tasks-count">0 tasks left</p>
+            <button id="clear-completed" aria-label="Clear completed tasks">
+                Clear completed
+            </button>
+        </div>
+    </div>
+
+    <div class="keyboard-shortcuts" aria-label="Keyboard shortcuts">
+        <button id="shortcuts-toggle" aria-label="Show keyboard shortcuts">
+            <i class="fas fa-keyboard"></i>
+        </button>
+        <div class="shortcuts-modal" hidden>
+            <h2>Keyboard Shortcuts</h2>
+            <ul>
+                <li><kbd>Enter</kbd> Add new task</li>
+                <li><kbd>Ctrl</kbd> + <kbd>D</kbd> Toggle dark mode</li>
+                <li><kbd>Ctrl</kbd> + <kbd>K</kbd> Show/hide shortcuts</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 
