@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modern Todo App
 
 A feature-rich, accessible, and responsive Todo application built with vanilla JavaScript, HTML, and CSS. This application follows modern web development best practices and provides a smooth user experience across all devices.
@@ -78,3 +79,6 @@ No build process or installation required - it works right out of the box!
 ## Contributing
 
 Feel free to submit issues and enhancement requests! 
+=======
+# CursorApp
+>>>>>>> d6980c195f2f24b2b3956cb82baf209fc2946716
